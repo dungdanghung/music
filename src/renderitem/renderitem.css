@@ -1,0 +1,45 @@
+.wrapiconrenderitemsibar
+{
+
+}
+
+.wraptitlerenderitemsibar{
+
+}
+
+.wrapitemsibar{
+    display: flex;
+    height: 38px;
+    color: #a0a0a0;
+    align-items: center;
+}
+
+.wrapitemsibar:hover{
+    color: #ececec;
+}
+
+.wrapitemsibar:hover .ij{
+    display: block;
+}
+
+.ij{
+    display: none;
+    margin-right: 10px;
+}
+
+.wrapitemsibar2{
+    display: flex;
+    
+    height: 36px;
+    width: 100%;
+    padding-left: 27px;
+    align-items: center;
+}
+
+.listitemiconsibar{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
