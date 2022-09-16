@@ -163,7 +163,7 @@ function Playmusic() {
             <div className='thanhchayplay'>
 
               <div className="wrapthanhchayplay">
-                <p className='margintime'>0.00</p>
+                <p className='margintime'>0:00</p>
                 <div className='wrapthanhchay'>
                 <div className='thanhchay'>
                   <div className='thanhchayitem'style={{width: thanhchayindexvolume}} >

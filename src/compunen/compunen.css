@@ -29,11 +29,10 @@
 .sidebar{
     background-color: hsla(0,0%,100%,0.05);
     width: 263px;
-    position: fixed;
     height: 100vh;
 }
 .wrapheaderconten{
-  width: 100%;
+  flex: 1;
 }
 
 
@@ -175,6 +174,7 @@
     -webkit-user-select: none;
     justify-content: space-between;
     background-repeat: no-repeat;
+    background-size: cover;
     -ms-user-select: none;
     user-select: none;
     background-image: url(https\:\/\/zmp3-static\.zmdcdn\.me\/skins\/zmp3-v6\.1\/images\/theme\/xone-miniplayer\.jpg);
@@ -204,6 +204,7 @@
 
 .titleitemcontenplaymusic{
     font-size: 14px;
+    width: max-content;
 }
 .titleitemcontenplaymusic a{
     text-decoration: none;
@@ -219,10 +220,15 @@
     display: flex;
     align-items: center;
     margin-left: 12px;
+    padding-right: 15px;
+    max-width: max-content;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(270deg,transparent .5%,#000 10%);
 }
 
 .titlecontenplaymusic{
     margin-top: -12px;
+    width: max-content;
 }
 
 .icenitemuser{
@@ -477,4 +483,13 @@
     align-items: center;
     height: 100%;
     background-color: #ffdb00;
+}
+
+
+@media screen and (max-width: 1175px)
+{
+
+    .contenplaymusic{
+        max-width: 155px;
+    }
 }

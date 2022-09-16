@@ -20,7 +20,7 @@ function Defaylayout({ children }) {
             <Sirdbar></Sirdbar>
             <div className='wrapheaderconten'>
                 <Header backgrou = {backgrou}></Header>
-                {children}
+                {/* {children} */}
             </div>
             <Playmusic></Playmusic>
         </div>
