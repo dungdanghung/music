@@ -1,6 +1,130 @@
-.Home{
-    margin-top: 70px;
-    height: 10000px;
-    margin-left: 264px;
+
+
+.conten{
+   
+    /* height: 10000px; */
+    position: relative;
 }
 
+.conten span{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.wc{
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.wcitem{
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: 213.863px;
+    margin: 0 -12px 20px;
+    justify-content: flex-end;
+    overflow: hidden;
+   
+}
+.wcitem1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.wcitem1_1{
+    width: 33.3333%;
+    height: 100%;
+    padding: 12px;
+    transition: all 0.5s ease;
+    left: 100%;
+    position: absolute;
+}
+.wcitem1_1 img{
+    height: 100%;
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+
+.actionwc{
+    transform: translateX(-400%);
+}
+
+.activewc img{
+    display: block;
+}
+.show1{
+    transform: translateX(-300%);
+}
+.show2{
+    transform: translateX(-200%);
+}
+.show3{
+    transform: translateX(-100%);
+}
+
+
+.ganday{
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.gandayconten{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    margin: 0 -10px;
+    position: relative;
+}
+.gandaytitle{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleganday p{
+    margin: 0;
+    color: #fff;
+}
+.titletatca{
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.titletatca p{
+    margin: 0;
+}
+
+.titlemainlistmusic{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.actionlistmusic{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actionbtnlistmusic{
+    background-color: #d7cb1f !important;
+}
+
+.actionlistmusic button{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 20px;
+    color: #fff;
+    border: 1px solid hsla(0,0%,100%,0.1);
+    border-radius: 18px;
+    background-color: transparent;
+    margin-right: 15px;
+}

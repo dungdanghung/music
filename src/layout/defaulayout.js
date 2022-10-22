@@ -1,29 +1,38 @@
 import Header from '../compunen/header'
 import Sirdbar from '../compunen/sirdbar'
-import { useState , useEffect } from "react";
+import { useState } from "react";
 import Playmusic from '../compunen/playmusic';
 import "./defaulayout.css"
+import Scroll from '../compunen/scroll';
+
+
 
 
 function Defaylayout({ children }) {
-   
-    const [backgrou , setbackgrou] = useState("transparent");
-    const a =window.addEventListener('scroll', () => {
-        let a = parseInt(window.scrollY);
-        a==0 ? setbackgrou("transparent") : setbackgrou("#242424")
-        
-    })
+    const [backgrou, setbackgrou] = useState("transparent")
+    const [state, setstate] = useState();
+    function testprop(data) {
+        setstate(data)
+    }
 
     return (
         <div className='wrapdefaulayout'>
-            
-            <Sirdbar></Sirdbar>
-            <div className='wrapheaderconten'>
-                <Header backgrou = {backgrou}></Header>
-                {/* {children} */}
+            <div className='wrapcontenmain'>
+
+                <Sirdbar></Sirdbar>
+                <div className='wrapheaderconten'>
+                    <Header backgrou={backgrou}></Header>
+                    <Scroll setbackgrou={setbackgrou}>
+                        <div className='wrapcontenitem'>
+                            {children.type(testprop)}
+                        </div>
+                    </Scroll>
+
+                </div>
             </div>
-            <Playmusic></Playmusic>
+            <Playmusic data={state}></Playmusic>
         </div>
+
     )
 }
 
