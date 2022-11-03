@@ -1,5 +1,5 @@
 import "./compunen.css"
-import { useEffect, useState } from "react"
+import { useEffect, useState , useRef } from "react"
 
 
 
@@ -8,7 +8,7 @@ function Scroll({ children, setbackgrou }) {
     const [scroll, setscroll] = useState('0')
     const [scrollitem, setscrollitem] = useState()
     const [all, setall] = useState();
-
+    const ref = useRef();
 
     function handlescroll(e) {
         e.target.scrollTop > 20 ? setbackgrou("#1e1e1e") : setbackgrou("transparent")
@@ -49,7 +49,7 @@ function Scroll({ children, setbackgrou }) {
         }
     }
 
-    const rever = new ResizeObserver((a)=>{
+    ref.current = new ResizeObserver((a)=>{
         setall({
             scrollheight: document.querySelector('.scroll').offsetHeight,
             heightconten: document.querySelector('.wrapconten').children[0].children[0].offsetHeight,
@@ -59,8 +59,8 @@ function Scroll({ children, setbackgrou }) {
     })
 
     useEffect(() => {
-        rever.observe(document.querySelector('.wrapcontens'))
-        rever.observe(document.querySelector('.wrapconten').children[0].children[0])
+        ref.current.observe(document.querySelector('.wrapcontens'))
+        ref.current.observe(document.querySelector('.wrapconten').children[0].children[0])
     }, [])
 
     
