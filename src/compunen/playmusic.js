@@ -14,9 +14,7 @@ function Playmusic({ data }) {
         <div className = {`playmusic ${data ? 'activeplaymusic' : ''}`}>
           <div className=" playmusicitem">
             <Handlecontainmusic data={data} ></Handlecontainmusic>
-
             <Handleplaymusic data={data} ></Handleplaymusic>
-
             <Handlendplaymusic ></Handlendplaymusic>
           </div>
         </div>

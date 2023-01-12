@@ -1,5 +1,4 @@
 import './compunen.css'
-import { Link } from 'react-router-dom';
 import Renderitemsibar from '../renderitem/renderitemsibar';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMusic} from '@fortawesome/free-solid-svg-icons'
