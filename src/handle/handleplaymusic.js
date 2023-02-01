@@ -103,6 +103,10 @@ function Handleplaymusic({ data }) {
         },100)
     }, [data])
 
+    useEffect(()=>{
+      console.log(document.getElementById("audio").duration)
+    },[data])
+
    
 
     return (

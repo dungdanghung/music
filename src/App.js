@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
       <div className='wrapall'>
       <Routes>
-        <Route path='/' element={<Defaylayout><Home></Home></Defaylayout>}></Route>
+        <Route path='/' element={<Defaylayout>{Home}</Defaylayout>}></Route>
         <Route path='canhan' element={<Defaylayout><Canhan></Canhan></Defaylayout>}></Route>
         <Route path='zingchart' element={<Defaylayout><Zingchart></Zingchart></Defaylayout>}></Route>
         <Route path='radio' element={<Defaylayout><Radio></Radio></Defaylayout>}></Route>

@@ -118,7 +118,7 @@ function Home(testprop) {
                 </div>
 
                 <div className='listmusicconten'>
-                    {Listmusic(datasongs, 9, testprop)}
+                    {Listmusic(datasongs, 25, testprop)}
                 </div>
             </div>
 
